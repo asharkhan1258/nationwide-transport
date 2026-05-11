@@ -100,7 +100,7 @@ body {
 .hero-section {
   position: relative; 
   padding: 50px 0px;
-  background: url("https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/optimized/rev-7730e34/ntslogistics.com/wp-content/uploads/2024/04/data1-3.webp") center center / cover no-repeat;
+  background: url("/images/data1-3.webp") center center / cover no-repeat;
   overflow: hidden;
 }
 
@@ -380,7 +380,7 @@ body {
   min-height: 420px;
   border-radius: 18px;
   overflow: hidden;
-  background: url("https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/optimized/rev-7730e34/ntslogistics.com/wp-content/uploads/2025/11/ai-cta-bg-2.webp") center center / cover no-repeat;
+  background: url("/images/ai-cta-bg-2.webp") center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
