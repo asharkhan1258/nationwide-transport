@@ -93,30 +93,252 @@
     </div>
 </section>
 
-<section class="kb-masonry-section py-5">
+
+<section class="kb-archive-section py-5">
     <div class="container py-lg-5">
 
-        <!-- Filters -->
-        <div class="kb-filter-wrapper mb-5">
-            <ul class="kb-filter-list">
-                <li class="kb-filter-btn active" data-filter="all">All</li>
-                <li class="kb-filter-btn" data-filter="auto">Auto Transport</li>
-                <li class="kb-filter-btn" data-filter="customs">Customs</li>
-                <li class="kb-filter-btn" data-filter="freight">Freight Shipping</li>
-                <li class="kb-filter-btn" data-filter="heavy">Heavy Hauling</li>
-                <li class="kb-filter-btn" data-filter="infographics">Infographics</li>
-                <li class="kb-filter-btn" data-filter="international">International</li>
-                <li class="kb-filter-btn" data-filter="logistics">Logistics</li>
-                <li class="kb-filter-btn" data-filter="semi">Semi Trucks</li>
-                <li class="kb-filter-btn" data-filter="regulations">State Regulations</li>
-            </ul>
+        <!-- Filter Bar -->
+        <div class="kb-filter-bar mb-4">
+            <label for="kb_cat_select" class="kb-filter-title">All Articles</label>
+
+            <div class="kb-filter-form">
+                <select id="kb_cat_select" class="form-select kb-filter-select">
+                    <option value="all">Category</option>
+                    <option value="auto">Auto Transport</option>
+                    <option value="customs">Customs</option>
+                    <option value="flatbed">Flatbed Trucking</option>
+                    <option value="freight">Freight Shipping</option>
+                    <option value="heavy">Heavy Hauling</option>
+                    <option value="infographics">Infographics</option>
+                    <option value="international">International</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="semi">Semi Trucks</option>
+                    <option value="regulations">State Regulations</option>
+                    <option value="trucking">Trucking</option>
+                </select>
+            </div>
         </div>
 
-        <!-- Cards -->
-        <div class="row g-4" id="kbCards"></div>
+        <!-- Cards Grid -->
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="heavy freight auto">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/08/500x300-Watermarks-All-Sites-2024-08-27T152114.158-300x180.png" alt="Tiny Homes">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">Everything You Need To Know About Tiny Homes/Houses</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            Truckers and fleet managers should select the best stops that offer unique and fun driver experience, safety, fuel, showers, toilets,...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="logistics trucking flatbed">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/Shipping-a-JCB-Telehandler-300x180.png" alt="JCB Telehandler">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">Six Essential Things a Truck Driver Should Keep In Their Rig</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            With the tremendous advancement in technology, there are things that drivers install in their trucks to make their long hours...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="semi trucking logistics">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/Transporting-a-Semi-Truck-300x180.png" alt="Semi Truck">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">A History of CB Radios and Truckers</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            The American truck driver became an icon; nothing symbolized their culture more than CB radios. Everyone had to have one,...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="heavy flatbed freight">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/CAT-Excavator-Shipping-300x180.png" alt="CAT Excavator">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">Can Long Haul Truck Drivers Live In Their Trucks?</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            Can long-haul truck drivers live in their trucks? In this article, you will learn everything you need about living in...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="regulations trucking infographics">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/Semi-Pulling-Lowboy-Trailer-300x180.png" alt="Lowboy Trailer">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">5 Best States for Truck Drivers in 2025</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            Experience and efficiency are essential for success in the shipping and transport industry, as is understanding the best locations or...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="regulations customs trucking">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/Transporting-a-CAT-D6T-Dozer-300x180.png" alt="CAT D6T Dozer">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">What is California’s AB5 Law and What Does It Mean For Independent Truckers?</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            As an established third-party trucking broker, Nationwide Transport Services has worked with several stakeholders to understand the impact of state...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="regulations customs international">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/04/Mark-II-Tamper-and-Cart-Shipping-300x180.png" alt="Mark II Tamper">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">Federal Motor Carrier Safety Administration Pre-Trip Inspection Requirements.</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            The Federal Motor Carrier Safety Administration provides regulations and requirements for owners of commercial vehicles, including trailers and trucks,...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-lg-3 kb-card-item" data-cat="logistics semi trucking international auto">
+                <article class="kb-post-card h-100">
+                    <a href="service.html" class="kb-card-thumb">
+                        <img src="https://ntslogistics.com/wp-content/uploads/2024/03/Shipping-2-Ford-F-550s-300x180.png" alt="Ford F-550s">
+                    </a>
+
+                    <div class="kb-card-body">
+                        <h3 class="kb-card-title">
+                            <a href="service.html">The Top Electronic Log Devices For Truckers</a>
+                        </h3>
+
+                        <p class="kb-card-excerpt">
+                            Truckers, fleet owners, and managers of a shipping company should install electronic log devices in trucks when transporting cargo...
+                        </p>
+
+                        <a href="service.html" class="kb-card-link">
+                            Read More
+                            <span class="arrow">
+                                <img src="https://ntslogistics.com/wp-content/uploads/2026/04/arrow-right.png" alt="right arrow">
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+      
 
     </div>
 </section>
+
+
+
 
 <!-- Footer Section -->
 <footer class="site-footer">
@@ -135,14 +357,14 @@
             Indo-Pol Transport LLC<br>
             <a href="tel:+18885616436">+1 (888) 561-6436</a><br>
             Fax: (954) 495-8199<br>
-            <a href="#">indopoltransportllc@gmail.com</a>
+            <a href="mailto:indopoltransportllc@gmail.com">indopoltransportllc@gmail.com</a>
           </p>
 
           <p>
             5795 Bradenton Rd, Cumming, GA 30040-1874
           </p>
 
-          <a href="#" class="footer-btn">CONTACT US</a>
+          <a href="contact.html" class="footer-btn">CONTACT US</a>
         </div>
       </div>
 
