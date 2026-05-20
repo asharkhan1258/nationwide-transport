@@ -211,17 +211,11 @@
 <section id="quoteFormArea" class="quote-form-section">
   <div class="container">
 
-    <form id="quoteForm" action="https://formsubmit.co/support@fmdesignhub.com" method="POST">
-
-      <input type="hidden" name="_subject" value="New Shipping Quote Request">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-
-      <input type="hidden" name="Selected Service" id="selectedServiceInput">
+    <form id="quoteForm" onsubmit="return false;">
 
       <div class="row g-4">
 
-        <div class="col-lg-8 col-12">
+        <div class="col-lg-12 col-12">
           <div class="quote-box">
 
             <button type="button" class="quote-back-btn" onclick="backToServices()">
@@ -239,24 +233,26 @@
               <h2>Let’s Get Started</h2>
 
               <div class="row g-4">
+
                 <div class="col-md-6 col-12">
                   <label>Shipping From</label>
-                  <input type="text" name="Shipping From" id="shippingFrom" class="form-control" required>
+                  <input type="text" class="form-control">
                 </div>
 
                 <div class="col-md-6 col-12">
                   <label>Shipping To</label>
-                  <input type="text" name="Shipping To" id="shippingTo" class="form-control" required>
+                  <input type="text" class="form-control">
                 </div>
 
                 <div class="col-12">
                   <label>Shipping On</label>
-                  <input type="date" name="Shipping Date" id="shippingDate" class="form-control" required>
+                  <input type="date" class="form-control">
                 </div>
+
               </div>
 
               <div class="quote-btn-row justify-content-end">
-                <button type="button" class="quote-next-btn" onclick="goNext(1, 2)">
+                <button type="button" class="quote-next-btn" onclick="goNext(1,2)">
                   Next Step
                 </button>
               </div>
@@ -264,105 +260,90 @@
 
             <!-- STEP 2 -->
             <div id="step2" class="quote-step">
+
               <div class="row g-4">
 
                 <div class="col-12">
                   <label>Load Description</label>
-                  <textarea name="Load Description" id="loadDescription" class="form-control" rows="4" required></textarea>
+                  <textarea class="form-control" rows="4"></textarea>
                 </div>
 
                 <div class="col-12">
                   <label>Length</label>
-                  <input type="text" name="Length" id="loadLength" class="form-control" required>
+                  <input type="text" class="form-control">
                 </div>
 
                 <div class="col-12">
                   <label>Loading Assistance Needed?</label>
 
-                  <div class="quote-radio-area">
-                    <label>
-                      <input type="radio" name="Loading Assistance Needed" value="Yes" required>
-                      Yes
-                    </label>
+                  <label><input type="radio" name="load"> Yes</label>
+                  <label><input type="radio" name="load"> No</label>
 
-                    <label>
-                      <input type="radio" name="Loading Assistance Needed" value="No">
-                      No
-                    </label>
-                  </div>
                 </div>
 
                 <div class="col-12">
                   <label>Shipment Type</label>
-                  <select name="Shipment Type" id="shipmentType" class="form-select" required>
-                    <option value="Single Shipment">Single Shipment</option>
-                    <option value="Multiple Shipment">Multiple Shipment</option>
-                    <option value="Full Truckload">Full Truckload</option>
-                    <option value="Less Than Truckload">Less Than Truckload</option>
+                  <select class="form-select">
+                    <option>Single Shipment</option>
+                    <option>Multiple Shipment</option>
+                    <option>Full Truckload</option>
+                    <option>Less Than Truckload</option>
                   </select>
                 </div>
 
               </div>
 
               <div class="quote-btn-row">
+
                 <button type="button" class="quote-prev-btn" onclick="showStep(1)">
                   Previous
                 </button>
 
-                <button type="button" class="quote-next-btn" onclick="goNext(2, 3)">
+                <button type="button" class="quote-next-btn" onclick="goNext(2,3)">
                   Next Step
                 </button>
+
               </div>
+
             </div>
 
             <!-- STEP 3 -->
             <div id="step3" class="quote-step">
+
               <div class="row g-3">
 
                 <div class="col-12">
-                  <input type="text" name="First Name" id="firstName" class="form-control" placeholder="First Name" required>
+                  <input type="text" class="form-control" placeholder="First Name">
                 </div>
 
                 <div class="col-12">
-                  <input type="text" name="Last Name" id="lastName" class="form-control" placeholder="Last Name" required>
+                  <input type="text" class="form-control" placeholder="Last Name">
                 </div>
 
                 <div class="col-12">
-                  <input type="email" name="Email" id="email" class="form-control" placeholder="Email" required>
+                  <input type="email" class="form-control" placeholder="Email">
                 </div>
 
                 <div class="col-12">
-                  <input type="text" name="Phone" id="phone" class="form-control" placeholder="Phone" required>
+                  <input type="text" class="form-control" placeholder="Phone">
                 </div>
 
               </div>
 
               <div class="quote-btn-row">
+
                 <button type="button" class="quote-prev-btn" onclick="showStep(2)">
                   Previous
                 </button>
 
-                <button type="submit" class="quote-submit-btn">
+                <button type="button" class="quote-submit-btn" onclick="goThanks()">
                   Submit
                 </button>
+
               </div>
+
             </div>
 
-          </div>
-        </div>
-
-        <!-- QUOTE DETAILS -->
-        <div class="col-lg-4 col-12">
-          <div class="quote-details-box">
-            <h3>QUOTE DETAILS</h3>
-            <p><strong>Service:</strong> <span id="detailService">---</span></p>
-            <p><strong>From:</strong> <span id="detailFrom">---</span></p>
-            <p><strong>To:</strong> <span id="detailTo">---</span></p>
-            <p><strong>Date:</strong> <span id="detailDate">---</span></p>
-            <p><strong>Load:</strong> <span id="detailLoad">---</span></p>
-            <p><strong>Name:</strong> <span id="detailName">---</span></p>
-            <p><strong>Email:</strong> <span id="detailEmail">---</span></p>
-            <p><strong>Phone:</strong> <span id="detailPhone">---</span></p>
           </div>
         </div>
 
@@ -424,6 +405,7 @@
           <ul>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="trems.html">Terms and Conditions</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
             
           </ul>
         </div>
@@ -441,7 +423,8 @@
       <p>
         © 2026 Indo-Pol Transport LLC |
          <a href="trems.html">Terms and Conditions</a> |
-        <a href="privacy.html">Privacy Policy</a> |
+         <a href="privacy.html">Privacy Policy</a> |
+        <a href="refund.html">Refund Policy</a> |
 
       </p>
     </div>
@@ -450,7 +433,11 @@
 </footer>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+function goThanks() {
+  window.location.href = "thanks.html";
+}
+</script>
 
 <script src="script.js"></script>
 </body>

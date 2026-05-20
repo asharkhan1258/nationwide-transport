@@ -225,7 +225,7 @@
 //     },
 //     {
 //         title: "Infographic: Which States Have The Most Expensive Tolls?",
-//         desc: "Updated 2026 Custom infographic created by NTS Logistic's experts. When it comes to transporting vehicles or equipment, tolls are something ...",
+//         desc: "Updated 2026 Custom infographic created by Logistic's experts. When it comes to transporting vehicles or equipment, tolls are something ...",
 //         img: "https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/optimized/rev-7730e34/ntslogistics.com/wp-content/uploads/bb-plugin/cache/FosterL-Image-1-scaled-custom_crop.jpeg",
 //         alt: "",
 //         cats: ["customs", "infographics", "regulations"]
